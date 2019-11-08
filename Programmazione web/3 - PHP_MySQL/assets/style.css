@@ -1,0 +1,70 @@
+body {
+    min-height: 100vh;
+    background-color: #F6F9FB;
+}
+
+.is-vcentered {
+    margin: auto 0;
+}
+
+.has-priority-low {
+    color: #00d1b2 !important;
+}
+
+.has-priority-medium {
+    color: #ffdd57 !important;
+}
+
+.has-priority-high {
+    color: #ff3860 !important;
+}
+
+#addTaskMobile {
+    padding-top: 2rem;
+    padding-bottom: 0;
+}
+
+.todo:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,.03);
+}
+
+.hero.is-link {
+    background-color: rgba(50, 115, 220, .1);
+}
+
+.hero.is-link h1,h2 {
+    color: rgba(50, 115, 220, 1)!important;
+}
+
+.has-transparent-background {
+    background-color: transparent;
+}
+
+.modal-background {
+    background-color: rgba(0,0,0,.4)
+}
+
+.is-borderless {
+    border: none;
+}
+
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.heading {
+    font-size: .75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: rgba(0,0,0,.4);
+}
+
+.column {
+    margin: .5rem;
+}
+
+.box {
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,127 @@
+/* GENERAL */
+body {
+    min-height: 100vh;
+}
+
+.container-large {
+    padding: 3rem;
+}
+
+.scale-hover {
+    transition: all .2s ease-in-out;
+}
+
+.scale-hover:hover {
+    transform: scale(1.1);
+}
+
+.hero-body {
+    padding: 0;
+}
+
+.sectionTitle {
+    color: rgba(0, 0, 0, 0.15);
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.sectionTitleLight {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.margin-1 {
+    margin: 1rem;
+}
+
+/* INTRO SECTION */
+.emoji {
+    font-size: 1.5rem;
+}
+
+.illustration {
+    margin-left: auto;
+    max-height: 300px;
+}
+
+@media (max-width: 768px) {
+    .illustration {
+        margin: 0 auto;
+    }
+}
+
+.button {
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 20px;
+}
+
+/* WORKS SECTION */
+.boxWork {
+    border-radius: 20px 20px 0px 50px;
+    padding: 2rem;
+}
+
+.has-calcolapizza-bg {
+    background-image: url("assets/calcolapizza_square.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.has-rubrica-bg {
+    background-image: url("assets/rubrica_square.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.has-dinero-bg {
+    background-image: url("assets/dinero_square.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* COLORS */
+.is-blue {
+    background-color: rgb(55, 8, 238);
+    border-color: transparent!important;
+    color: #fff!important;
+}
+
+.has-background-blue {
+    background-color: rgb(30, 55, 153);
+    border-color: transparent!important;
+    color: #fff!important;
+}
+
+.has-background-grey {
+    background-color: #fafafa!important;
+}
+
+.has-text-blue {
+    color: rgb(55, 8, 238);
+}
+
+.has-text-blue-dark {
+    color: rgb(30, 55, 153)!important;
+}
+
+/* MAIL SECTION */
+#mailHero {
+    border-radius: 6px;
+    box-shadow: 0px 10px 25px 0px rgba(0,0,0,.1);
+}
+
+#email:hover {
+    color: rgb(30, 55, 153);
+}
+
+/* FOOTER */
+.footer {
+    padding: 1rem;
+}

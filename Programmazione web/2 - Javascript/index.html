@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>start2weather</title>
+    <link rel="icon" href="assets/weather/02d.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="site">
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <a href="/"><img src="assets/start2weather.png" class="image is-128x128 is-centered" /></a>
+                    <br>
+                    <div class="field has-addons is-inline-flex">
+                        <div class="control">
+                            <input id="searchbar" class="input is-rounded" type="text" placeholder="Search location">
+                        </div>
+                        <div id="searchbtn" class="control">
+                            <a class="button is-dark-blue is-rounded">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <a id="locationbtn" class="button is-dark-blue is-rounded"><i class="fas fa-location-arrow"></i></a>
+                    <progress id="progress" class="progress is-small is-dark-blue is-centered is-hidden" max="100"
+                        style="width:200px"></progress>
+                    <h2 id="searchResultsNumber" class="title has-text-white is-hidden has-text-left">Risultati trovati:
+                    </h2>
+                    <div id="searchresults" class="box is-shadowless is-hidden">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="weatherContainer" class="container is-hidden">
+            <a id="locationTag" href="/" target="_blank"><span class="tag is-light-opacity is-medium">
+                    <i class="fas fa-location-arrow"></i>&nbsp;&nbsp;<span id="cityName">xxxx,
+                        XX</span>
+                </span></a>
+            <br><br>
+            <div class="columns">
+                <div class="column is-4 is-centered">
+                    <i class="far fa-clock has-text-white"></i>&nbsp;<time id="timestamp0"
+                        class="has-text-white"></time>
+                    <article class="media box is-shadowless">
+                        <figure class="media-left">
+                            <p class="image is-128x128 sunny">
+                                <img id="currentIcon0" src="">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <h1 class="title"><span id="currentTemperature0">--</span><span
+                                            class="title is-6 has-text-white has-text-weight-light">°C</span></h1>
+                                    <h2 id="currentConditions0" class="subtitle is-5 has-text-weight-normal">-</h2>
+                                    <i class="fas fa-tint"></i> <span id="currentHumidity0">-</span>%
+                                    <br>
+                                    <i class="fas fa-thermometer-quarter"></i><i class="fas fa-long-arrow-alt-down"></i>
+                                    <span id="tempMin0">-</span>°C
+                                    <br>
+                                    <i class="fas fa-thermometer-full"></i><i class="fas fa-long-arrow-alt-up"></i>
+                                    <span id="tempMax0">-</span>°C
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="column is-4 is-centered">
+                    <i class="far fa-clock has-text-white"></i>&nbsp;<time id="timestamp1"
+                        class="has-text-white"></time>
+                    <article class="media box is-shadowless">
+                        <figure class="media-left">
+                            <p class="image is-128x128 sunny">
+                                <img id="currentIcon1" src="">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <h1 class="title"><span id="currentTemperature1">--</span><span
+                                            class="title is-6 has-text-white has-text-weight-light">°C</span></h1>
+                                    <h2 id="currentConditions1" class="subtitle is-5 has-text-weight-normal">-</h2>
+                                    <i class="fas fa-tint"></i> <span id="currentHumidity1">-</span>%
+                                    <br>
+                                    <i class="fas fa-thermometer-quarter"></i><i class="fas fa-long-arrow-alt-down"></i>
+                                    <span id="tempMin1">-</span>°C
+                                    <br>
+                                    <i class="fas fa-thermometer-full"></i><i class="fas fa-long-arrow-alt-up"></i>
+                                    <span id="tempMax1">-</span>°C
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="column is-4 is-centered">
+                    <i class="far fa-clock has-text-white"></i>&nbsp;<time id="timestamp2"
+                        class="has-text-white"></time>
+                    <article class="media box is-shadowless">
+                        <figure class="media-left">
+                            <p class="image is-128x128 sunny">
+                                <img id="currentIcon2" src="">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <h1 class="title"><span id="currentTemperature2">--</span><span
+                                            class="title is-6 has-text-white has-text-weight-light">°C</span></h1>
+                                    <h2 id="currentConditions2" class="subtitle is-5 has-text-weight-normal">-</h2>
+                                    <i class="fas fa-tint"></i> <span id="currentHumidity2">-</span>%
+                                    <br>
+                                    <i class="fas fa-thermometer-quarter"></i><i class="fas fa-long-arrow-alt-down"></i>
+                                    <span id="tempMin2">-</span>°C
+                                    <br>
+                                    <i class="fas fa-thermometer-full"></i><i class="fas fa-long-arrow-alt-up"></i>
+                                    <span id="tempMax2">-</span>°C
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p class="has-text-weight-light">
+                Weather icons made by <a class="has-text-weight-bold"
+                    href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio"
+                    target="_blank">photo3idea_studio</a> from <a class="has-text-weight-bold"
+                    href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed
+                by <a class="has-text-weight-bold" href="http://creativecommons.org/licenses/by/3.0/"
+                    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="weather.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</body>
+
+</html>
